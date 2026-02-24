@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KiDelicia — O melhor pão de queijo de Alagoas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo.png" alt="Logo da KiDelicia, um pão de queijo estilizado com um sorriso" />
+            </div>
+
+            <!-- Nav -->
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#novidades" class="nav-link">Novidades</a>
+                <a href="#mais-pedidos" class="nav-link">Mais Pedidos</a>
+            </nav>
+
+            <!-- CTA -->
+            <div style="display:flex;align-items:center;gap:1rem;">
+                <button class="btn-primary" onclick="addRipple(event, this)">
+                    <span class="material-symbols-outlined" style="font-size:1.1rem;">shopping_bag</span>
+                    Peça Agora
+                </button>
+                <!-- Hamburger (mobile) -->
+                <button class="hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!--hero-->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-card">
+
+                    <!-- Adesivo "Desde 1996" -->
+                    <div class="hero-sticker">
+                        <span class="hero-sticker-top">desde</span>
+                        <span class="hero-sticker-year">1996</span>
+                        <span class="hero-sticker-bottom">✦ tradição ✦</span>
+                    </div>
+
+                    <div class="hero-content">
+
+                        <h1 class="hero-title">
+                            Único,<br />
+                            <em>delicioso,</em><br />
+                            Inesquecivel
+                        </h1>
+
+                        <div class="hero-cta">
+                            <button class="btn-hero-primary">Ver Nossos Sabores</button>
+                            <button class="btn-hero-secondary">Nossa História</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FEATURES STRIP -->
+        <section class="features-strip">
+            <div class="container">
+                <div class="features-grid">
+
+                    <div class="feature-card reveal delay-1">
+                        <div class="feature-icon-wrap">
+                            <span class="material-symbols-outlined">verified</span>
+                        </div>
+                        <h3 class="feature-title">Totalmente alagoana</h3>
+                        <p class="feature-desc">Empresa criada com paixão e tradição alagoana.</p>
+                    </div>
+
+                    <div class="feature-card reveal delay-2">
+                        <div class="feature-icon-wrap">
+                            <span class="material-symbols-outlined">workspace_premium</span>
+                        </div>
+                        <h3 class="feature-title">Diversidade de sabores</h3>
+                        <p class="feature-desc">Imagine a mistura mais inusitada. Ela está aqui!</p>
+                    </div>
+
+                    <div class="feature-card reveal delay-3">
+                        <div class="feature-icon-wrap">
+                            <span class="material-symbols-outlined">local_shipping</span>
+                        </div>
+                        <h3 class="feature-title">Delivery para todos</h3>
+                        <p class="feature-desc">Entregas para mais de 25 bairros de Maceió e expandindo cada vez mais!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MARQUEE -->
+        <div class="marquee-section" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">star</span> Feito com Amor</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">planet</span> Sabor de outro Mundo</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">thumb_up</span> +500 Entregas por Semana</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">sentiment_very_satisfied</span> Clientes Satisfeitos</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">eco</span> Ingredientes Naturais</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">schedule</span> Fresquinho Todo Dia</span>
+                    <span class="marquee-dot"></span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">star</span> Feito com Amor</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">planet</span> Sabor de outro Mundo</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">thumb_up</span> +500 Entregas por Semana</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">sentiment_very_satisfied</span> Clientes Satisfeitos</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">eco</span> Ingredientes Naturais</span>
+                    <span class="marquee-dot"></span>
+                    <span class="marquee-item"><span class="material-symbols-outlined"
+                            style="font-size:1rem;">schedule</span> Fresquinho Todo Dia</span>
+                    <span class="marquee-dot"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--sobre-->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="about-inner">
+
+                    <!-- Text Column -->
+                    <div class="reveal-left">
+                        <h2 class="about-title">Desde 1996<br /><em>trazendo felicidade</em> para lares alagoanos</h2>
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, fugit. Sequi harum suscipit
+                            earum esse delectus? Odio, harum autem perspiciatis sed mollitia magni neque quibusdam
+                            veritatis! Odit perspiciatis voluptas facere!
+                        </p>
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum corporis? Quaerat
+                            libero recusandae neque voluptatibus est deleniti ipsa facere eius, magni, quasi velit
+                            magnam tenetur repellendus repellat optio vel.
+                        </p>
+
+                        <div class="social-links">
+                            <a class="social-btn" href="https://www.instagram.com/paodequeijokidelicia/"
+                                aria-label="Instagram">
+                                <svg fill="currentColor" width="22" height="22" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a class="social-btn" href="#" aria-label="Facebook">
+                                <svg fill="currentColor" width="22" height="22" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="location-block">
+                            <div class="location-row" style="color:var(--primary);font-size:1.75rem;margin-top:2px;">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <div>
+                                    <h4
+                                        style="font-weight:700;color:var(--primary);font-size:1.1rem;margin-bottom:0.25rem;">
+                                        Onde Estamos</h4>
+                                    <p style="color:rgba(49,54,122,0.75);font-weight:500;">R. Saldanha da Gama, 277 -
+                                        Farol, Maceió - AL, 57051-580</p>
+                                </div>
+                            </div>
+                            <div class="map-wrapper">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1169.355953245004!2d-35.734986986803165!3d-9.661485560420406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x701457894cdfdcf%3A0x6228450d171ca31f!2sP%C3%A3o%20de%20Queijo%20KiDel%C3%ADcia!5e0!3m2!1spt-BR!2sbr!4v1771890157290!5m2!1spt-BR!2sbr"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="map-overlay">
+                                    <a class="map-btn" href="https://maps.app.goo.gl/fmrxKaMgGePHVsPU9"
+                                        target="_blank">Ver no Google Maps</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="about-image-wrap reveal-right">
+                        <div class="about-image-blob"></div>
+                        <img class="about-image" src="entrega.png"
+                            alt="Entregando sacola com pãozinhos para o cliente" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- NOVIDADES -->
+        <section class="novidades" id="novidades">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-label">✦ Direto do Forno</span>
+                        <h2 class="section-title">Últimas Novidades</h2>
+                    </div>
+                    <div class="nav-arrows">
+                        <button class="arrow-btn outline" aria-label="Anterior">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button class="arrow-btn filled" aria-label="Próximo">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+
+                    <article class="product-card reveal delay-1">
+                        <div class="product-img-wrap">
+                            <span class="product-tag tag-new">NOVO</span>
+                            <img class="product-img" src="romeu-e-julieta.png" alt="Pãozinho recheado com goiabada" />
+                        </div>
+                        <h3 class="product-name">Romeu e Julieta</h3>
+                        <p class="product-desc">A doçura da goiabada cremosa abraçada pela nossa massa salgadinha e
+                            macia.</p>
+                        <a href="#" class="product-link">Quero provar</a>
+                    </article>
+
+                    <article class="product-card reveal delay-2">
+                        <div class="product-img-wrap">
+                            <span class="product-tag tag-seasonal">NOVO</span>
+                            <img class="product-img" src="leite-ninho.png" alt="Pãozinho de leite ninho" />
+                        </div>
+                        <h3 class="product-name">Leite Ninho</h3>
+                        <p class="product-desc">Pãozinho sabor leite ninho, perfeito para quem gosta de doces.</p>
+                        <a href="#" class="product-link">Quero provar</a>
+                    </article>
+
+                    <article class="product-card reveal delay-3">
+                        <div class="product-img-wrap">
+                            <span class="product-tag tag-spicy">LIMITADO</span>
+                            <img class="product-img" src="prestigio.png" alt="Pãozinho de prestígio" />
+                        </div>
+                        <h3 class="product-name">Prestígio</h3>
+                        <p class="product-desc">Pãozinho sabor prestígio, perfeito para quem gosta de chocolate, de coco
+                            e pãozinho KiDelicia.</p>
+                        <a href="#" class="product-link">Quero provar</a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MAIS PEDIDOS -->
+        <section class="mais-pedidos" id="mais-pedidos">
+            <div class="container">
+
+                <div class="section-center reveal">
+                    <span class="section-badge">✦ Os Queridinhos</span>
+                    <h2 class="section-title-dark">Mais Pedidos</h2>
+                    <p class="section-sub">Esses são os campeões de venda. Maciez e sabor que conquistam todo mundo.</p>
+                </div>
+
+                <div class="menu-grid">
+
+                    <div class="menu-item reveal delay-1">
+                        <img class="menu-img" src="tradicional.png" alt="Pãozinho Tradicional" />
+                        <div class="menu-details">
+                            <div class="menu-top">
+                                <h4 class="menu-name">Tradicional (Cento)</h4>
+                                <span class="menu-price">R$ 180,00</span>
+                            </div>
+                            <p class="menu-desc">O clássico, com cobertura de queijo parmesão e recheio cremoso.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal delay-2">
+                        <img class="menu-img" src="grande.png" alt="Pãozinho Grande" />
+                        <div class="menu-details">
+                            <div class="menu-top">
+                                <h4 class="menu-name">Tradicional (Grande)</h4>
+                                <span class="menu-price">R$ 8,50</span>
+                            </div>
+                            <p class="menu-desc">O tradicional, mas para grandes fomes.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal delay-3">
+                        <img class="menu-img" src="morango.png" alt="Pãozinho de morango" />
+                        <div class="menu-details">
+                            <div class="menu-top">
+                                <h4 class="menu-name">Morango (10 unidades)</h4>
+                                <span class="menu-price">R$ 21,00</span>
+                            </div>
+                            <p class="menu-desc">Nosso delicioso pãozinho KiDelicia com recheio de morango.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal delay-4">
+                        <img class="menu-img" src="kitkat.png" alt="pãozinho com recheio sabor Kitkat" />
+                        <div class="menu-details">
+                            <div class="menu-top">
+                                <h4 class="menu-name">Kitkat (15 unidades)</h4>
+                                <span class="menu-price">R$ 31,50</span>
+                            </div>
+                            <p class="menu-desc">Nosso AMADO pãozinho KiDelicia com recheio de Kitkat.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="see-all-wrap reveal">
+                    <button class="btn-see-all">Ver Cardápio Completo</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CTA / WHATSAPP -->
+        <section class="cta-section">
+            <div class="cta-inner reveal">
+                <h2 class="cta-title">Ficou com vontade? 😋</h2>
+                <p class="cta-text">
+                    Peça agora mesmo pelo WhatsApp. O verdadeiro pãozinho KiDelícia da padaria direto para sua casa.
+                    Sabor e qualidade que chega fresquinho na sua casa!
+                </p>
+                <a href="#" class="btn-whatsapp">
+                    <svg fill="currentColor" width="28" height="28" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    Peça agora no WhatsApp
+                </a>
+                <p class="cta-hours">Atendemos de Seg a Sáb, das 08h às 18h</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="logo">
+                    <img src="logo.png" alt="Logo da KiDelicia, um pão de queijo estilizado com um sorriso" />
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#">Cardápio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Contato</h3>
+                    <div class="footer-contact-item">
+                        <span class="material-symbols-outlined">phone</span>
+                        (82) 99999-9999
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="material-symbols-outlined">mail</span>
+                        contato@kidelicia.com.br
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        Maceió, AL
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 KiDelicia. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+
+    <script>
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => observer.observe(el));
+
+        function addRipple(e, btn) {
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            const rect = btn.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX - rect.left - size / 2}px;top:${e.clientY - rect.top - size / 2}px;`;
+            btn.appendChild(ripple);
+            ripple.addEventListener('animationend', () => ripple.remove());
+        }
+
+        document.querySelectorAll('.btn-primary, .btn-hero-primary, .menu-add, .btn-whatsapp').forEach(btn => {
+            btn.addEventListener('click', (e) => addRipple(e, btn));
+        });
+
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            header.style.boxShadow = window.scrollY > 20 ? '0 4px 30px rgba(0,0,0,0.3)' : '';
+        }, { passive: true });
+
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(l => l.style.color = '');
+                    const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                    if (active) active.style.color = 'var(--secondary)';
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(s => navObserver.observe(s));
+
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav');
+            const isOpen = nav.style.display === 'flex';
+            nav.style.cssText = isOpen ? '' : `display:flex;flex-direction:column;position:absolute;top:5rem;left:0;right:0;background:var(--primary);padding:1.5rem;gap:1.25rem;border-bottom:1px solid rgba(255,255,255,0.1);animation:fadeInDown 0.3s ease;`;
+        }
+
+        const heroCard = document.querySelector('.hero-card');
+        if (heroCard) {
+            window.addEventListener('scroll', () => {
+                heroCard.style.backgroundPositionY = `calc(50% + ${window.scrollY * 0.3}px)`;
+            }, { passive: true });
+        }
+    </script>
+
+</body>
+
+</html>
