@@ -488,6 +488,11 @@ a {
     padding: 2rem 1.5rem 5rem;
     background: var(--primary);
     position: relative;
+    background-image:
+        linear-gradient(rgba(49, 54, 122, 0), rgba(49, 54, 122, 0.983)),
+        url('capa.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero::before {
@@ -504,21 +509,12 @@ a {
 .hero-card {
     position: relative;
     overflow: hidden;
-    border-radius: var(--radius-lg);
     min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 5rem 1.5rem;
-    background-image:
-        linear-gradient(rgba(49, 54, 122, 0.55), rgba(49, 54, 122, 0.82)),
-        url('capa.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 3px solid var(--secondary);
-    box-shadow: 0 0 0 6px rgba(253, 205, 1, 0.15), var(--shadow-lg), inset 0 0 80px rgba(49, 54, 122, 0.5);
-    animation: pulse-glow 4s ease-in-out infinite;
     transition: transform var(--transition-slow);
 }
 
